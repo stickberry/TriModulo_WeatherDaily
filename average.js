@@ -41,5 +41,5 @@ $(document).ready(function(){
 
 
 function show(avg){
-	return 	"<h3><strong><br />Average Temperature</strong>: "+ avg +"&deg;C</h3>";
+	return 	"<h3 style='font-family: Cinzel; padding-top: 55px; padding-left: 475px; margin-top:-10px; padding-bottom: 10px; margin-bottom: -5px;'><strong><br />Average Temperature</strong>: "+ avg +"&deg;C</h3>";
 }
