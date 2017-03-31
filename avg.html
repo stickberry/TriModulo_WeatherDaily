@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Current Weather Information</title>
+	<link rel = "icon" href="icon.png">
+
+
+   	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel">
+   	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nova+Cut">
+	<link rel = "stylesheet" href = "weather.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.0.0/ocanvas.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script type = "text/javascript" src = "weather.js"></script>
+	<script type = "text/javascript" src = "average.js"></script>
+
+</head>
+<body>
+
+	<header>
+      	<div class = "container">		
+      		<div id = "branding" >
+      			<h1> Weather<span id = "highlight"> Daily </span> </h1>
+      		</div>
+        	<nav>
+          		<ul>
+					<li> <a href = "current.html"> HOME </a></li>
+					<li id = "active"> <a href = "#"> AVERAGE </a> </li>
+         		 </ul>
+        	</nav>
+        	</div>
+        	
+      	</div>
+    </header>
+
+     <section id="showcase">
+      	<div class="container">
+      		<br><br><br><br>
+        	<h1 class="cut">What's it like outside?!</h1>
+        </div>
+    </section>
+    
+
+    <section id="search2">
+      	<div class="container">
+        	<h1 class = "animate">Enter 4 locations...</h1>
+          <br>
+          <div class="row form-group" id="rowdiv2">
+            <input type="text" name="in1" id="INPUTID1" class="form-control" placeholder="City 1"><br>
+            <input type="text" name="in2" id="INPUTID2" class="form-control" placeholder="City 2"><br>
+            <input type="text" name="in3" id="INPUTID3" class="form-control" placeholder="City 3"><br>
+            <input type="text" name="in4" id="INPUTID4" class="form-control" placeholder="City 4"><br>
+            <button id="button2" class="btn btn-info">Average it!</button>
+        </div>
+       	 
+		</div>
+			<span id = "error"></span>
+    </section>
+
+	<div class = "container1">
+		<div id="show2">
+			
+		</div>
+	</div>
+
+
+	<footer>
+      	<p>TriHacker | Indian Institute Of Information Technology, Allahabad. &copy; 2017</p>
+    </footer>
+
+</body>
+</html>
