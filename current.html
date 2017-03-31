@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Current Weather Information</title>
+	<link rel = "icon" href="icon.png">
+
+
+   	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel">
+   	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nova+Cut">
+	<link rel = "stylesheet" href = "weather.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.0.0/ocanvas.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script type = "text/javascript" src = "weather.js"></script>
+	<script type = "text/javascript" src = "average.js"></script>
+
+</head>
+<body>
+
+	<header>
+      	<div class = "container">		
+      		<div id = "branding" >
+      			<h1> Weather<span id = "highlight"> Daily </span> </h1>
+      		</div>
+        	<nav>
+          		<ul>
+					<li id = "active"> <a href = "#"> HOME </a></li>
+					<li> <a href = "avg.html"> AVERAGE </a> </li>
+         		 </ul>
+        	</nav>
+        	</div>
+        	
+      	</div>
+    </header>
+
+     <section id="showcase">
+      	<div class="container">
+      		<br><br><br><br>
+        	<h1 class="cut">What's it like outside?!</h1>
+        </div>
+    </section>
+    
+
+    <section id="search">
+      	<div class="container">
+        	<h1 class = "animate">Enter the location...</h1>
+          	
+       	 	<div class = "row form-group form-inline" id="rowDiv">
+       	 		<input type="text" placeholder="Enter City Name.. " id = "city">
+				<button id="submitWeather" class = "btn btn-info fade in">Search City</button>
+			</div>
+		</div>
+			<span id = "error"></span>
+    </section>
+
+	<div class = "container1">
+		<div id="show">
+			
+		</div>
+	</div>
+
+
+	<footer>
+      	<p>TriHacker | Indian Institute Of Information Technology, Allahabad. &copy; 2017</p>
+    </footer>
+
+</body>
+</html>
